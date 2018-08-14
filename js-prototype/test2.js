@@ -17,7 +17,8 @@ console.log(typeof Person);//function
 console.log(typeof p1);//object
 console.log(typeof p2);//object
 
-console.log(typeof p1.prototype);
+console.log(typeof Person.prototype);//object
+console.log(p1.prototype);//undefined 函数对象才有prototype
 
 console.log(typeof p1.constructor);//function
 console.log(p1.constructor == Person);//true
